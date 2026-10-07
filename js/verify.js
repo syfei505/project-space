@@ -2,17 +2,10 @@
 // SUPABASE CONFIG
 // ==========================================
 
-const SUPABASE_URL =
-  "https://ktnerldmbivprhzsdugi.supabase.co";
-
-const SUPABASE_ANON_KEY =
-  "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Imt0bmVybGRtYml2cHJoenNkdWdpIiwicm9sZSI6ImFub24iLCJpYXQiOjE3OTEzMTkyMjksImV4cCI6MjEwNjg5NTIyOX0.bqHRdU8yG-NxJp9rODDlWxgMFcWRKl_j2jhK1VMu-qA";
-
-const supabaseClient =
-  supabase.createClient(
-    SUPABASE_URL,
-    SUPABASE_ANON_KEY
-  );
+const supabaseClient = supabase.createClient(
+  window.SITE_CONFIG.supabase.url,
+  window.SITE_CONFIG.supabase.publishableKey
+);
 
 
 // ==========================================
