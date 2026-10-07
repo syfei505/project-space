@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <title>Project Access — Fei's Digital Space</title>
+
+  <meta
+    name="description"
+    content="Verifikasi akses project Fei's Digital Space."
+  >
+
+  <link rel="stylesheet" href="css/verify.css">
+
+  <link
+    rel="preconnect"
+    href="https://fonts.googleapis.com"
+  >
+
+  <link
+    rel="preconnect"
+    href="https://fonts.googleapis.com"
+    crossorigin
+  >
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet"
+  >
+</head>
+
+<body>
+
+  <main class="verify-page">
+
+    <!-- Decorative space -->
+    <div class="stars stars-1"></div>
+    <div class="stars stars-2"></div>
+
+    <div class="verify-card">
+
+      <!-- BACK -->
+      <a href="index.html" class="back-btn">
+        ← Back to Fei's Space
+      </a>
+
+
+      <!-- LOGO -->
+      <div class="cat-logo">
+        <img
+          src="assets/images/cat-vector.png"
+          alt=""
+        >
+      </div>
+
+
+      <!-- LOCK -->
+      <div class="lock-icon">
+        🔐
+      </div>
+
+
+      <p class="eyebrow">
+        EXCLUSIVE PROJECT
+      </p>
+
+
+      <!-- PROJECT TITLE -->
+      <h1 id="projectTitle">
+        Project Access
+      </h1>
+
+
+      <p class="subtitle">
+        Project ini khusus untuk followers Fei.
+        Follow Instagram terlebih dahulu untuk
+        mengajukan akses.
+      </p>
+
+
+      <!-- ========================= -->
+      <!-- STEP 1 -->
+      <!-- ========================= -->
+
+      <section class="step">
+
+        <div class="step-number">
+          01
+        </div>
+
+        <div class="step-content">
+
+          <h2>
+            Follow Instagram Fei
+          </h2>
+
+          <p>
+            Follow akun Instagram saya terlebih dahulu
+            sebelum mengajukan akses project.
+          </p>
+
+          <a
+            class="instagram-btn"
+            href="https://www.instagram.com/alhzrrh5_/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <span>◎</span>
+            Follow Instagram
+          </a>
+
+        </div>
+
+      </section>
+
+
+      <!-- ========================= -->
+      <!-- STEP 2 -->
+      <!-- ========================= -->
+
+      <section class="step">
+
+        <div class="step-number">
+          02
+        </div>
+
+        <div class="step-content">
+
+          <h2>
+            Siapkan Bukti Follow
+          </h2>
+
+          <p>
+            Ambil screenshot profil Instagram kamu
+            yang menunjukkan bahwa kamu sudah follow.
+          </p>
+
+
+          <div
+            class="upload-box"
+            id="uploadBox"
+          >
+
+            <input
+              type="file"
+              id="proofImage"
+              accept="image/png,image/jpeg,image/webp"
+              hidden
+            >
+
+            <label for="proofImage">
+
+              <span class="upload-icon">
+                📷
+              </span>
+
+              <strong>
+                Pilih Screenshot
+              </strong>
+
+              <small>
+                PNG, JPG atau WEBP
+              </small>
+
+            </label>
+
+          </div>
+
+
+          <!-- IMAGE PREVIEW -->
+
+          <div
+            class="preview"
+            id="preview"
+            hidden
+          >
+
+            <img
+              id="previewImage"
+              alt="Preview bukti follow"
+            >
+
+            <button
+              type="button"
+              id="removeImage"
+            >
+              × Hapus
+            </button>
+
+          </div>
+
+        </div>
+
+      </section>
+
+
+      <!-- ========================= -->
+      <!-- STEP 3 -->
+      <!-- ========================= -->
+
+      <section class="step">
+
+        <div class="step-number">
+          03
+        </div>
+
+        <div class="step-content">
+
+          <h2>
+            Tulis Username Instagram
+          </h2>
+
+          <p>
+            Gunakan username Instagram yang kamu gunakan
+            untuk mengikuti akun saya.
+          </p>
+
+
+          <div class="username-input">
+
+            <span>@</span>
+
+            <input
+              type="text"
+              id="username"
+              placeholder="usernamekamu"
+              autocomplete="off"
+            >
+
+          </div>
+
+        </div>
+
+      </section>
+
+
+      <!-- ========================= -->
+      <!-- SUBMIT -->
+      <!-- ========================= -->
+
+      <div class="send-area">
+
+        <button
+          type="button"
+          class="dm-btn"
+          id="submitVerification"
+        >
+
+          <span>
+            🚀
+          </span>
+
+          <span>
+            Ajukan Verifikasi
+          </span>
+
+        </button>
+
+
+        <p
+          id="formMessage"
+          class="form-message"
+        ></p>
+
+
+        <p class="note">
+          Setelah mengirim pengajuan, admin akan memeriksa
+          bukti follow secara manual. Jika disetujui,
+          kamu akan mendapatkan akses ke project.
+        </p>
+
+      </div>
+
+
+      <!-- ========================= -->
+      <!-- PENDING -->
+      <!-- ========================= -->
+
+      <div
+        id="pendingBox"
+        class="status-box pending"
+        hidden
+      >
+
+        <div class="status-icon">
+          ⏳
+        </div>
+
+        <h2>
+          Verifikasi Sedang Diproses
+        </h2>
+
+        <p>
+          Bukti kamu sudah dikirim.
+          Silakan tunggu sampai admin melakukan pengecekan.
+        </p>
+
+        <span id="pendingProject"></span>
+
+      </div>
+
+
+      <!-- ========================= -->
+      <!-- APPROVED -->
+      <!-- ========================= -->
+
+      <div
+        id="approvedBox"
+        class="status-box approved"
+        hidden
+      >
+
+        <div class="status-icon">
+          🎉
+        </div>
+
+        <h2>
+          Verifikasi Berhasil!
+        </h2>
+
+        <p>
+          Kamu sudah mendapatkan akses ke project ini.
+        </p>
+
+        <a
+          id="accessProject"
+          class="btn btn-primary"
+          href="#"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          🚀 Access Project
+        </a>
+
+      </div>
+
+
+      <!-- ========================= -->
+      <!-- REJECTED -->
+      <!-- ========================= -->
+
+      <div
+        id="rejectedBox"
+        class="status-box rejected"
+        hidden
+      >
+
+        <div class="status-icon">
+          ❌
+        </div>
+
+        <h2>
+          Verifikasi Ditolak
+        </h2>
+
+        <p>
+          Bukti yang kamu kirim belum dapat diverifikasi.
+          Silakan lakukan follow dan kirim bukti yang lebih jelas.
+        </p>
+
+        <button
+          type="button"
+          id="tryAgain"
+          class="btn btn-soft"
+        >
+          Coba Lagi
+        </button>
+
+      </div>
+
+
+      <!-- ========================= -->
+      <!-- INFORMATION -->
+      <!-- ========================= -->
+
+      <div class="info-box">
+
+        <span>
+          ✨
+        </span>
+
+        <p>
+          Screenshot hanya digunakan sebagai bukti
+          pengajuan akses. Jangan kirim password,
+          kode OTP, atau informasi pribadi lainnya.
+        </p>
+
+      </div>
+
+    </div>
+
+
+    <!-- FOOTER -->
+
+    <footer>
+      Made with by Fei
+    </footer>
+
+  </main>
+
+
+  <!-- ========================= -->
+  <!-- SUPABASE -->
+  <!-- ========================= -->
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="js/config.js"></script>
+<script src="js/verify.js"></script>
+
+</body>
+</html>

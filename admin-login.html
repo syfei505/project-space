@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <title>Admin Login — Fei's Digital Space</title>
+
+  <meta
+    name="description"
+    content="Admin login Fei's Digital Space."
+  >
+
+  <!-- Google Font -->
+  <link
+    rel="preconnect"
+    href="https://fonts.googleapis.com"
+  >
+
+  <link
+    rel="preconnect"
+    href="https://fonts.gstatic.com"
+    crossorigin
+  >
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet"
+  >
+
+  <!-- Admin Login CSS -->
+  <link
+    rel="stylesheet"
+    href="css/admin-login.css"
+  >
+
+</head>
+
+
+<body>
+
+  <main class="admin-login-page">
+
+    <div class="admin-login-card">
+
+      <!-- Logo -->
+      <div class="admin-logo">
+
+        <img
+          src="assets/images/cat-vector.png"
+          alt="Fei's Digital Space"
+        >
+
+      </div>
+
+
+      <!-- Header -->
+      <div class="admin-header">
+
+        <p class="eyebrow">
+          FEI'S DIGITAL SPACE
+        </p>
+
+        <h1>
+          Admin Login
+        </h1>
+
+        <p>
+          Masuk untuk mengelola pengajuan
+          verifikasi project.
+        </p>
+
+      </div>
+
+
+      <!-- Login Form -->
+      <form id="adminLoginForm">
+
+        <!-- Email -->
+        <div class="form-group">
+
+          <label for="adminEmail">
+            Email Admin
+          </label>
+
+          <input
+            type="email"
+            id="adminEmail"
+            placeholder="admin@email.com"
+            autocomplete="email"
+            required
+          >
+
+        </div>
+
+
+        <!-- Password -->
+        <div class="form-group">
+
+          <label for="adminPassword">
+            Password
+          </label>
+
+          <input
+            type="password"
+            id="adminPassword"
+            placeholder="Masukkan password"
+            autocomplete="current-password"
+            required
+          >
+
+        </div>
+
+
+        <!-- Login Button -->
+        <button
+          type="submit"
+          id="loginButton"
+          class="login-button"
+        >
+
+          <span>
+            🔐
+          </span>
+
+          <span>
+            Login Admin
+          </span>
+
+        </button>
+
+
+        <!-- Message -->
+        <p
+          id="loginMessage"
+          class="login-message"
+        ></p>
+
+      </form>
+
+
+      <!-- Back -->
+      <a
+        href="index.html"
+        class="back-link"
+      >
+        ← Kembali ke Fei's Space
+      </a>
+
+    </div>
+
+
+    <!-- Footer -->
+    <footer>
+      Made with  by Fei
+    </footer>
+
+  </main>
+
+
+  <!-- ================================= -->
+  <!-- SUPABASE -->
+  <!-- ================================= -->
+
+ <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+ <script src="js/config.js"></script>
+ <script src="js/admin-login.js"></script>
+
+</body>
+
+</html>

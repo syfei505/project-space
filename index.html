@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="id" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Fei's Digital Space | Syafei Alhizarroh Syafutra</title>
+  <meta name="description" content="Fei's Digital Space: tautan media sosial, portofolio, dan kontak Syafei Alhizarroh Syafutra (Fei). Student, tech enthusiast, future engineer.">
+  <meta name="author" content="Syafei Alhizarroh Syafutra">
+  <meta name="theme-color" content="#FBF6EA">
+
+  <!-- Open Graph & Twitter: GANTI "https://GANTI-DOMAIN.vercel.app" dengan domain Vercel kamu setelah deploy -->
+  <link rel="canonical" href="https://GANTI-DOMAIN.vercel.app/">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Fei's Digital Space">
+  <meta property="og:title" content="Fei's Digital Space">
+  <meta property="og:description" content="Create yourself, don't wait to be found. Student | Tech Enthusiast | Future Engineer.">
+  <meta property="og:url" content="https://GANTI-DOMAIN.vercel.app/">
+  <meta property="og:image" content="https://GANTI-DOMAIN.vercel.app/assets/images/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:locale" content="id_ID">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Fei's Digital Space">
+  <meta name="twitter:description" content="Create yourself, don't wait to be found.">
+  <meta name="twitter:image" content="https://GANTI-DOMAIN.vercel.app/assets/images/og-image.png">
+
+  <link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer">
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- Terapkan tema & penanda JS sebelum halaman digambar (mencegah kedipan) -->
+  <script>
+    (function () {
+      var d = document.documentElement, t = null;
+      d.classList.add('js');
+      try { t = localStorage.getItem('fei-theme'); } catch (e) {}
+      if (t !== 'light' && t !== 'dark') {
+        t = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+      }
+      d.setAttribute('data-theme', t);
+    })();
+  </script>
+</head>
+<body>
+  <!-- Sprite ilustrasi kucing (dipakai berulang lewat <use>) -->
+<!-- Sprite ilustrasi kucing -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <symbol id="cat" viewBox="0 0 600 600">
+
+    <image
+      href="assets/images/cat-vector.png"
+      x="0"
+      y="0"
+      width="600"
+      height="600"
+      preserveAspectRatio="xMidYMid meet"
+    />
+
+  </symbol>
+</svg>
+
+  <div id="loader" class="loader" role="status" aria-live="polite">
+    <svg class="loader-cat" aria-hidden="true"><use href="#cat"/></svg>
+    <span>Memuat ruang digital…</span>
+  </div>
+
+  <a class="skip" href="#main">Lewati ke konten utama</a>
+
+  <header class="nav" id="top">
+    <div class="nav-inner">
+      <a class="brand" href="#top" aria-label="Fei's Digital Space, kembali ke atas">
+        <svg class="brand-cat" aria-hidden="true"><use href="#cat"/></svg>
+        <span>Fei's Digital Space</span>
+      </a>
+      <nav id="site-nav" class="menu" aria-label="Navigasi utama">
+        <a href="#links">Tautan</a>
+        <a href="#projects">Proyek</a>
+        <a href="#contact">Kontak</a>
+      </nav>
+      <button id="theme-toggle" class="icon-btn" type="button" aria-label="Ganti tema" aria-pressed="false">
+        <i class="fa-solid fa-moon icon-moon" aria-hidden="true"></i>
+        <i class="fa-solid fa-sun icon-sun" aria-hidden="true"></i>
+      </button>
+      <button id="menu-toggle" class="icon-btn menu-btn" type="button" aria-label="Buka menu" aria-expanded="false" aria-controls="site-nav">
+        <i class="fa-solid fa-bars" aria-hidden="true"></i>
+      </button>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- A. HERO -->
+    <section class="hero container" aria-labelledby="hero-name">
+      <div class="hero-card">
+        <div class="scene-wrap" id="scene" aria-hidden="true">
+          <img id="hero-cover" class="cover" alt="" hidden decoding="async" referrerpolicy="no-referrer">
+          <svg class="scene" viewBox="0 0 400 170" preserveAspectRatio="xMidYMax slice">
+            <g transform="translate(0 30)"><g class="stars">
+              <circle cx="40" cy="30" r="1.6"/><circle cx="92" cy="58" r="1.2"/><circle cx="150" cy="24" r="1.8"/>
+              <circle cx="210" cy="50" r="1.3"/><circle cx="262" cy="22" r="1.5"/><circle cx="372" cy="70" r="1.3"/>
+              <circle cx="120" cy="86" r="1"/><circle cx="238" cy="84" r="1.1"/>
+            </g>
+            <circle class="sun" cx="326" cy="46" r="21"/>
+            <path class="moon" d="M334 24a22 22 0 1 0 12 40a18 18 0 0 1-12-40z"/>
+            <g class="cloud c1"><ellipse cx="86" cy="52" rx="26" ry="9"/><ellipse cx="104" cy="45" rx="16" ry="10"/><ellipse cx="72" cy="46" rx="12" ry="8"/></g>
+            <g class="cloud c2"><ellipse cx="236" cy="34" rx="20" ry="7"/><ellipse cx="248" cy="29" rx="12" ry="8"/></g>
+            </g><g transform="translate(0 24)"><path class="m-back" d="M0 170V118l58-50 52 44 50-32 70 54 60-42 62 36 48-30v72z"/>
+            <path class="m-front" d="M0 170v-30l78-36 58 46 72-40 70 42 60-24 62 22v20z"/></g>
+          </svg>
+          <svg class="hero-cat" aria-hidden="true"><use href="#cat"/></svg>
+        </div>
+
+        <div class="avatar-ring">
+          <img id="hero-photo" class="avatar" src="assets/images/profile-placeholder.png" alt="Foto profil Fei" width="128" height="128" decoding="async">
+        </div>
+
+        <div class="hero-body">
+          <p class="status"><span class="dot" aria-hidden="true"></span><span id="hero-status">Exploring the Future 🚀</span></p>
+          <h1 id="hero-name">Syafei Alhizarroh Syafutra</h1>
+          <p class="nick">akrab disapa <strong id="hero-nick">Fei</strong></p>
+          <p class="tagline" id="hero-tagline">Create yourself, don't wait to be found.</p>
+          <p class="role" id="hero-role">Student | Tech Enthusiast | Future Engineer</p>
+          <ul class="fields" id="hero-fields" aria-label="Bidang yang ditekuni"></ul>
+
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#links"><i class="fa-solid fa-link" aria-hidden="true"></i> Lihat tautan</a>
+            <a class="btn btn-soft" href="#projects"><i class="fa-solid fa-folder-open" aria-hidden="true"></i> Lihat portofolio</a>
+            <button class="btn btn-ghost" id="copy-link" type="button"><i class="fa-regular fa-copy" aria-hidden="true"></i> Salin tautan</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- B. LINK HUB -->
+    <section id="links" class="section container" aria-labelledby="links-title">
+      <div class="section-head">
+        <h2 id="links-title">Temukan saya di sini</h2>
+        <p>Pilih tempat yang paling nyaman buat kamu.</p>
+      </div>
+      <div id="link-grid" class="link-grid"></div>
+    </section>
+
+    <!-- E. PROJECTS -->
+    <section id="projects" class="section container wide" aria-labelledby="projects-title">
+      <div class="section-head">
+        <h2 id="projects-title">Proyek &amp; portofolio</h2>
+        <p>Beberapa hal yang pernah dan sedang saya bangun.</p>
+      </div>
+      <div id="filters" class="filters" role="group" aria-label="Filter kategori proyek"></div>
+      <div id="project-grid" class="project-grid" aria-live="polite"></div>
+    </section>
+
+    <!-- F. CONTACT -->
+    <section id="contact" class="section container wide" aria-labelledby="contact-title">
+      <div class="contact-card">
+        <div class="contact-info">
+          <h2 id="contact-title">Let's build something great together!</h2>
+          <p id="contact-text"></p>
+          <div id="contact-buttons" class="contact-buttons"></div>
+        </div>
+
+        <!--
+          CATATAN FORMULIR:
+          Website statis tidak punya server, jadi formulir ini tidak bisa mengirim pesan sendiri.
+          - Jika contact.formEndpoint di js/config.js diisi (mis. Formspree), data dikirim ke layanan itu
+            dan notifikasi sukses hanya muncul bila layanan menjawab berhasil.
+          - Jika kosong, tombol Kirim membuka aplikasi email (mailto:) dengan pesan terisi.
+          Tidak ada notifikasi "terkirim" palsu.
+        -->
+        <form id="contact-form" class="form" novalidate>
+          <label for="f-name">Nama</label>
+          <input id="f-name" name="name" type="text" autocomplete="name" required maxlength="80" placeholder="Nama kamu">
+          <label for="f-email">Email</label>
+          <input id="f-email" name="email" type="email" autocomplete="email" required maxlength="120" placeholder="nama@email.com">
+          <label for="f-message">Pesan</label>
+          <textarea id="f-message" name="message" rows="5" required maxlength="1500" placeholder="Tulis pesanmu di sini"></textarea>
+          <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" class="hp" aria-hidden="true">
+          <button id="form-submit" class="btn btn-primary" type="submit"><i class="fa-solid fa-paper-plane" aria-hidden="true"></i> Kirim pesan</button>
+          <p id="form-note" class="form-note"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- H. FOOTER -->
+  <footer class="footer">
+    <div class="container wide footer-inner">
+      <svg class="footer-cat" aria-hidden="true"><use href="#cat"/></svg>
+      <p class="credit">Foto: <a href="https://unsplash.com/@ohlrogge" target="_blank" rel="noopener noreferrer">Niklas Ohlrogge</a> dan <a href="https://unsplash.com/@cgower" target="_blank" rel="noopener noreferrer">Christopher Gower</a> di <a href="https://unsplash.com" target="_blank" rel="noopener noreferrer">Unsplash</a></p>
+      <p class="footer-text"><span id="footer-text">Made with  by Fei</span> <span class="year">© <span id="year"></span></span></p>
+      <div id="footer-socials" class="footer-socials"></div>
+      <button id="to-top" class="btn btn-soft" type="button"><i class="fa-solid fa-arrow-up" aria-hidden="true"></i> Kembali ke atas</button>
+    </div>
+  </footer>
+
+  <!-- G. MUSIC PLAYER (opsional, tidak pernah autoplay) -->
+  <aside id="player" class="player" aria-label="Pemutar musik" hidden>
+    <button id="play-btn" class="play-btn" type="button" aria-label="Putar musik"><i class="fa-solid fa-play" aria-hidden="true"></i></button>
+    <div class="player-main">
+      <p class="player-title"><span id="track-title">the sound of my all-time favorite musical instrument</span> <span id="track-artist" class="player-artist"></span></p>
+      <input id="progress" class="range" type="range" min="0" max="100" value="0" step="0.1" aria-label="Posisi lagu" disabled>
+    </div>
+    <label class="vol" title="Volume">
+      <i class="fa-solid fa-volume-low" aria-hidden="true"></i>
+      <input id="volume" class="range" type="range" min="0" max="1" step="0.05" value="0.6" aria-label="Volume">
+    </label>
+  </aside>
+
+  <div id="toast-root" class="toast-root" role="status" aria-live="polite"></div>
+
+  <script src="js/config.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>

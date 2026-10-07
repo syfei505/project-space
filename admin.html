@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <title>Admin — Verification Requests</title>
+
+  <link
+    rel="stylesheet"
+    href="css/admin.css"
+  >
+
+</head>
+
+
+<body>
+
+  <main class="admin-container">
+
+    <!-- =========================
+         ADMIN HEADER
+    ========================== -->
+
+    <header class="admin-header">
+
+      <div>
+
+        <span class="eyebrow">
+          FEI DIGITAL SPACE
+        </span>
+
+        <h1>
+          Verification Requests
+        </h1>
+
+        <p>
+          Kelola permintaan akses project.
+        </p>
+
+      </div>
+
+
+      <div class="admin-actions">
+
+        <button
+          id="refreshBtn"
+          class="btn"
+          type="button"
+        >
+          🔄 Refresh
+        </button>
+
+        <button
+          id="logoutBtn"
+          class="btn btn-logout"
+          type="button"
+        >
+          🚪 Logout
+        </button>
+
+      </div>
+
+    </header>
+
+
+    <!-- =========================
+         LOADING
+    ========================== -->
+
+    <section
+      id="loading"
+      class="state"
+    >
+      Memuat data...
+    </section>
+
+
+    <!-- =========================
+         EMPTY
+    ========================== -->
+
+    <section
+      id="empty"
+      class="state"
+      hidden
+    >
+      🎉 Tidak ada permintaan pending.
+    </section>
+
+
+    <!-- =========================
+         REQUESTS
+    ========================== -->
+
+    <section
+      id="requests"
+      class="requests"
+    ></section>
+
+  </main>
+
+
+  <!-- =========================
+       SUPABASE
+  ========================== -->
+
+  <script
+    src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"
+  ></script>
+
+
+  <!-- =========================
+       ADMIN JAVASCRIPT
+  ========================== -->
+    <script
+        src="js/config.js"
+    ></script>
+  <script src="js/admin.js"></script>
+
+</body>
+
+</html>
