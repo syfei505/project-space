@@ -119,7 +119,7 @@ window.SITE_CONFIG = {
     enabled: true,
     title: "the sound of my all-time favorite musical instrument",
     artist: "Jacob Pianist",
-    src: "assets/audio/Canon-JacobPiano.mp3"
+    src: "assets/audio/canon-jacobpiano.mp3"
   },
 
   /* ---------- Footer ---------- */
